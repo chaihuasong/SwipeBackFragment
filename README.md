@@ -1,6 +1,8 @@
 # SwipeBackFragment
 An Android library that can finish a Fragment&amp;Activity with swipe-back gesture.
 
+已统一支持库为AndroidX
+
 滑动Fragment&Activity边缘即可类似IOS一样，拖动返回。
 
 原理分析：[传送门](http://www.jianshu.com/p/626229ca4dc2),  如果你重度使用Fragment，不妨看看这个库[Fragmentation](https://github.com/YoKeyword/Fragmentation)
@@ -22,8 +24,18 @@ An Android library that can finish a Fragment&amp;Activity with swipe-back gestu
 # 如何使用
 1、项目下app的build.gradle中依赖：
 ````gradle
-// appcompat v7包是必须的
-compile 'me.yokeyword:swipebackfragment:0.4.0'
+	allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+````
+````gradle
+// appcompat包是必须的
+	dependencies {
+	        implementation 'com.github.chaihuasong:SwipeBackFragment:v1.0'
+	}
 ````
 2、如果Activity也需要支持SwipeBack，则继承SwipeBackActivity:
 ````java
@@ -88,4 +100,5 @@ public class SwipeBackSampleFragment extends SwipeBackFragment {
 
 # 致谢
 [ikew0ng/SwipeBackLayout](https://github.com/ikew0ng/SwipeBackLayout)
+[YoKeyword/SwipeBackLayout](https://github.com/YoKeyword/SwipeBackFragment)
 
