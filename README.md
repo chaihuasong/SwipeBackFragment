@@ -100,5 +100,6 @@ public class SwipeBackSampleFragment extends SwipeBackFragment {
 
 # 致谢
 [ikew0ng/SwipeBackLayout](https://github.com/ikew0ng/SwipeBackLayout)
+
 [YoKeyword/SwipeBackLayout](https://github.com/YoKeyword/SwipeBackFragment)
 
